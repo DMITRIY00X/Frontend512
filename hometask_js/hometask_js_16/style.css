@@ -1,0 +1,35 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.picture{
+  display: block;
+}
+
+button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 10px 20px;
+    background-color: rgba(123, 78, 165, 0.5);
+    border-radius: 20px;
+
+}
+
+.proba{
+    width: 150px;
+    height: 20px;
+    padding: 20px;
+    /* border: 1px solid; */
+    margin-top: 10px;
+    border-radius: 5px;
+
+}

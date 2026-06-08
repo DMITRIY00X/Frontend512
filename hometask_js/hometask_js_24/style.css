@@ -1,0 +1,42 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.background {
+    background-color: rgba(0, 0, 255, 0.059);
+    padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.sum {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+
+.cost {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.kg {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 255, 0.527);
+    border: 1px solid;
+    margin-right: 10px;
+    color: white;
+}
+
+.kg:hover {
+    background: white;
+    color: blue;
+}

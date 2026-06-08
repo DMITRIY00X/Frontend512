@@ -1,0 +1,43 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+.wrap {
+    max-width: 1140px;
+    height: 1000px;
+    margin: 0 auto;
+    
+}
+
+button {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.proba {
+    margin-left: 50px;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid silver;
+}
+
+.time{
+    margin-left: 50px;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid silver;
+}
