@@ -1,0 +1,15 @@
+
+html,body{
+    background-color: aliceblue;
+}
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+canvas{
+    margin-top: 20px;
+    background: white;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
