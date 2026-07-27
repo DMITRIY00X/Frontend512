@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        canvas {
+            border: 2px solid #444;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #status {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="game" width="400" height="400"></canvas>
+    <div id="status">Нажмите стрелку, чтобы начать игру</div>
+
+    <script>
+        const canvas = document.getElementById('game');
+        const ctx = canvas.getContext('2d');
+        const statusEl = document.getElementById('status');
+
+        const grid = 20;                // размер клетки
+        const tileCount = canvas.width / grid; // сколько клеток по горизонтали/вертикали
+
+        // Состояние игры
+        let snake = [
+            { x: 10, y: 10 },
+            { x: 9, y: 10 },
+            { x: 8, y: 10 }
+        ];
+        let apple = { x: 5, y: 5 };
+        let dx = 1, dy = 0;             // направление движения (в клетках)
+        let isGameRunning = false;      // игра ещё не запущена
+        let lastTime = 0;               // для контроля скорости
+        const speed = 150;              // задержка между шагами в мс
+
+        function resetGame() {
+            snake = [
+                { x: 10, y: 10 },
+                { x: 9, y: 10 },
+                { x: 8, y: 10 }
+            ];
+            dx = 1; dy = 0;
+            isGameRunning = false;
+            placeApple();
+            statusEl.textContent = 'Нажмите стрелку, чтобы начать игру';
+        }
+
+        function placeApple() {
+            do {
+                apple.x = Math.floor(Math.random() * tileCount);
+                apple.y = Math.floor(Math.random() * tileCount);
+            } while (snake.some(s => s.x === apple.x && s.y === apple.y));
+        }
+
+        function moveSnake() {
+            const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+
+            // Проверка столкновений
+            if (
+                head.x < 0 || head.x >= tileCount ||
+                head.y < 0 || head.y >= tileCount
+            ) {
+                resetGame();
+                return;
+            }
+            for (let i = 0; i < snake.length; i++) {
+                if (snake[i].x === head.x && snake[i].y === head.y) {
+                    resetGame();
+                    return;
+                }
+            }
+
+            snake.unshift(head); // добавляем новую голову
+            if (head.x === apple.x && head.y === apple.y) {
+                placeApple();
+            } else {
+                snake.pop(); // убираем хвост, если не съели яблоко
+            }
+        }
+
+        function draw() {
+            // Очистка поля
+            ctx.fillStyle = '#1a1a1a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Рисуем змейку
+            ctx.fillStyle = '#00ff88';
+            snake.forEach(segment => {
+                ctx.fillRect(segment.x * grid, segment.y * grid, grid - 2, grid - 2);
+            });
+
+            // Рисуем яблоко
+            ctx.fillStyle = '#ff4444';
+            ctx.fillRect(apple.x * grid, apple.y * grid, grid - 2, grid - 2);
+        }
+
+        function gameLoop(timestamp) {
+            if (!isGameRunning) {
+                requestAnimationFrame(gameLoop);
+                return;
+            }
+
+            const delta = timestamp - lastTime;
+            if (delta >= speed) {
+                lastTime = timestamp;
+                moveSnake();
+                draw();
+            }
+            requestAnimationFrame(gameLoop);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            // Разрешаем менять направление только если игра уже запущена ИЛИ это первый ход
+            const key = e.key;
+
+            // Блокируем разворот на 180 градусов
+            if ((key === 'ArrowUp' && dy !== 1) ||
+                (key === 'ArrowDown' && dy !== -1) ||
+                (key === 'ArrowLeft' && dx !== 1) ||
+                (key === 'ArrowRight' && dx !== -1)) {
+
+                switch (key) {
+                    case 'ArrowUp':
+                        dx = 0; dy = -1; break;
+                    case 'ArrowDown':
+                        dx = 0; dy = 1; break;
+                    case 'ArrowLeft':
+                        dx = -1; dy = 0; break;
+                    case 'ArrowRight':
+                        dx = 1; dy = 0; break;
+                    default: return;
+                }
+
+                // Первый ход: запускаем игру
+                if (!isGameRunning) {
+                    isGameRunning = true;
+                    statusEl.textContent = 'Игра идёт';
+                }
+            }
+        });
+
+        // Инициализация
+        placeApple();
+        resetGame();
+        requestAnimationFrame(gameLoop);
+    </script>
+</body>
+
+</html>
