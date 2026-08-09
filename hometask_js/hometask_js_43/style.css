@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+#consent-popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 4rem;
+    background-color: yellow;
+    transition: opacity 1s ease;
+
+}
+
+#consent-popup.hidden {
+    opacity: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+}
