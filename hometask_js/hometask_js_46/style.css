@@ -1,0 +1,11 @@
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.money {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 15px;
+}
+
