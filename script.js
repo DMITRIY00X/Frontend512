@@ -747,3 +747,11 @@ console.log("Квадрат числа: " + num1 ** 2); */
 // document.writeln(st.match(regex));
 
 
+// if(navigator.cookieEnabled === false){
+//     alert("Cookies отключены");
+// }else{
+//     alert("Cookies включены");
+// }
+
+document.cookie = "user = Сергей";
+alert(document.cookie);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pac-Man Canvas</title>
+  <style>
+    body {
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    canvas {
+      border: 3px solid #ffaa00;
+      background: black;
+    }
+    #ui {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pac-Man (Canvas)</h1>
+  <div id="ui">
+    <div id="score">Счёт: 0</div>
+    <div id="status"></div>
+  </div>
+  <canvas id="game" width="520" height="440"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

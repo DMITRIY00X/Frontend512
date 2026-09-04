@@ -1,0 +1,28 @@
+ul{
+    list-style-type: upper-roman;
+
+}
+#A{list-style-type: lower-alpha;color: black;}
+#B{list-style-type: lower-alpha;color: black;}
+#C{list-style-type: lower-alpha;color: black;}
+
+ul#D{list-style-image:url(images/orange_marker.png)}
+ul#E{list-style-image: url(images/green_marker.png);}
+ul#F{list-style-image: url(images/orange_marker.png);}
+ul#G{list-style-type: lower-alpha;color: black;}
+ul#H{list-style-type: lower-alpha;color: black;}
+ul#I{list-style-image: url(images/red_marker.png);}
+ul#J{list-style-image: url(images/blue_marker.png);}
+ul#K{list-style-image: url(images/red_marker.png)}
+ul#L{list-style-image: url(images/blue_marker.png)}
+ul#M{list-style-image: url(images/black_marker.png)}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li#uno{color: red;}
+li#due{color: orange;}
+li#tre{color: green;}
+li#quattro{color: aqua;}
+li#cinque{color: violet;}
