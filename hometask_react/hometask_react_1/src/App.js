@@ -1,0 +1,18 @@
+// import Footer from './Footer';
+import Article from './article/Article';
+import Header from './header/Header';
+
+import './App.css';
+import Footer from './footer/Footer';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Article />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
