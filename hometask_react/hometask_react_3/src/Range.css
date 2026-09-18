@@ -1,0 +1,17 @@
+.range{
+    margin-top: 100px ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.figure{
+    width: 120px;
+    height:120px ;
+    background: blue;
+    text-align: center;
+}
+
+.cube input{
+    width: 50px;
+}

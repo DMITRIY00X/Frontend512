@@ -1,0 +1,10 @@
+h1{
+    padding: 20px;
+    /* color: rgba(237, 245, 244, 0.568); */
+}
+
+.App-header{
+    background: url(background3.jpg)no-repeat center center;
+    background-size:cover;
+    padding: 200px;
+}

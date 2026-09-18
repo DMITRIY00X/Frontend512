@@ -1,0 +1,19 @@
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: bold;
+    background: #0c0c0cbe;
+    padding: 20px;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #0c0c0cbe;
+    padding: 30px;
+}
+
+nav li:hover{
+background-color: rgba(0, 0, 0, 0.119);
+}

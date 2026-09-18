@@ -1,0 +1,110 @@
+{
+  "people": [
+    {
+      "name": "Юрий",
+      "surname": "Антонов",
+      "music": "Жизнь",
+      "year": "Год выпуска песни: 1982",
+      "photo": "https://filed16-24.my.mail.ru/pic?url=https%3A%2F%2Fcontent-14.foto.my.mail.ru%2Fmail%2Frovd32%2F_musicplaylistcover%2Fi-2343.jpg&mw=&mh=&sig=8d8e11d49d559ad2322f0c356326b6e9"
+    },
+    {
+      "name": "il",
+      "surname": "Volo",
+      "music": "Grande amore",
+      "year": "Год выпуска песни: 2015",
+      "photo": "https://i.pinimg.com/736x/6c/60/16/6c6016f4875cb5d58c0513530495d1c5.jpg",
+      "vinil": "https://images.icon-icons.com/559/PNG/512/Vinyl_icon-icons.com_53678.png"
+    },
+    {
+      "name": "Юрий",
+      "surname": "Антонов",
+      "music": "20 лет спустя",
+      "year": "Год выпуска песни: 1981",
+      "photo": "https://cdn.7days.ru/pic/2ae/A1ED608C1D2D1F7B43258C34002A5B48/1713759/90.jpg"
+    },
+    {
+      "name": "Ricky",
+      "surname": "Martin",
+      "music": "livin la vida loca",
+      "year": "Год выпуска песни: 1999",
+      "photo": "https://resizer.mail.ru/p/ad056d1c-1112-53ac-8b10-4a9b560fec1c/dpr:200/AAACNdWRYSgF-KFo6J9O6BWrqGqgX6VAB7sW7_3RN0DUSRmcf8KUAadfuu_sdjfdQZXS1JfrAd2sNjLOF8DH9wRRel4.jpg"
+    },
+    {
+      "name": "Группа ",
+      "surname": "Viva",
+      "music": "Аллилуйя",
+      "year": "Год выпуска песни: 2019",
+      "photo": "https://static.tildacdn.com/tild3062-3532-4630-b734-313137306561/_.jpg"
+    },
+    {
+      "name": "Adriano ",
+      "surname": "Celentano",
+      "music": "Confessa",
+      "year": "Год выпуска песни: 2002",
+      "photo": "https://img.pravda.ru/image/photo/2/4/4/199244.jpeg"
+    },
+    {
+      "name": "Группа",
+      "surname": "Reamonn",
+      "year": "Год выпуска песни: 2006",
+      "music": "Tonight",
+      "photo": "https://avatars.mds.yandex.net/i?id=b7a0a0d7b18b504b5485b91a7f8d55ba_l-5440551-images-thumbs&n=13"
+    },
+    {
+      "name": "Группа",
+      "surname": "Ricci e poveri",
+      "year": "Год выпуска песни: 1981",
+      "music": "Sara perche ti amo",
+      "photo": "https://filed8-12.my.mail.ru/pic?url=https%3A%2F%2Fcontent-29.foto.my.mail.ru%2Fmail%2Fviktorkondrashov%2F_musicplaylistcover%2Fi-351767.jpg&mw=&mh=&sig=8529ea344fc14361cc40fce87a726beb"
+    },
+    {
+      "name": "Andrea",
+      "surname": "Bocelli",
+      "year": "Год выпуска песни: 1995",
+      "music": "Vivo per lei",
+      "photo": "https://avatars.mds.yandex.net/i?id=f35b45174cf9ca288e96ded4ae2f1e82_l-9856853-images-thumbs&n=13"
+    },
+    {
+      "name": "Группа",
+      "surname": "Звери",
+      "year": "Год выпуска песни: 2005",
+      "music": "До скорой встречи",
+      "photo": "https://rusradio.ru/b/d/XWbK87shCEISaddOJjm-EpBoMuEPD1pWOs2ucZHVGon_KQzod35rkA1fBDEG-QBQhzdb9fe7AOec=ypesht1BrsvVyq3SEgYdVw.webp"
+    },
+    {
+      "name": "Вячеслав",
+      "surname": "Бутусов",
+      "year": "Год выпуска песни: 2004",
+      "music": "Девушка по городу",
+      "photo": "https://avatars.yandex.net/get-music-content/5234929/cbe7dded.p.41145/m1000x1000"
+    },
+    {
+      "name": "Группа",
+      "surname": "Браво",
+      "year": "Год выпуска песни: 1996",
+      "music": "Это за окном рассвет",
+      "photo": "https://akkordam.ru/_1New_pic/snimok_ehkrana_2023-03-04_133443.png"
+    },
+    {
+      "name": "Charles ",
+      "surname": "Aznavour",
+      "year": "Год выпуска песни: 1981",
+      "music": "Une vie d’amour",
+      "photo": "https://avatars.mds.yandex.net/i?id=d38ae81b2bf0cdbd01dccdc813b827e0_l-12164955-images-thumbs&n=13"
+    },
+    {
+      "name": "Александр",
+      "surname": "Рыбак",
+      "year": "Год выпуска песни: 2018",
+      "music": "That’s How You Write A Song",
+      "photo": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/f9/6f/dc/f96fdc90-30fe-8180-9d3e-feb2be2d6d5a/pr_source.png/400x400bb.jpg"
+    },
+    {
+      "name": "Enzo Ghinazzi",
+      "surname": "(Pupo)",
+      "music": "Su di noi",
+      "year": "Год выпуска песни: 1980",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pupo_2016.png?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled"
+    }
+  ]
+}
